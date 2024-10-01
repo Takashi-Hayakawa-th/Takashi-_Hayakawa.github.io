@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="早川喬の個人ホームページ。研究内容や副業について紹介しています。">
+    <meta name="keywords" content="早川喬, 研究, 副業, GitHub Pages">
+    <meta property="og:title" content="早川喬 Homepage">
+    <meta property="og:description" content="研究内容や副業について紹介しています。">
+    <meta property="og:image" content="URL_to_image.jpg">
+    <meta property="og:type" content="website">
     <title>Takashi Hayakawa Homepage</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Noto Sans', sans-serif;
             background-color: #f2f4f5;
             color: #333;
             margin: 0;
@@ -65,6 +78,24 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* スマホ向けデザイン */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            section {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 1.1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -79,13 +110,18 @@
     </div>
 
     <nav>
-        <a href="research.html">研究</a>
-        <a href="business.html">副業(本業)</a>
+        <a href="#">研究</a>
+        <a href="#">副業(本業)</a>
     </nav>
 </section>
 
 <footer>
     <p>&copy; 2024 Takashi Hayakawa</p>
+    <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <div>
+        <a href="#">Twitter</a> | 
+        <a href="#">LinkedIn</a>
+    </div>
 </footer>
 
 </body>
