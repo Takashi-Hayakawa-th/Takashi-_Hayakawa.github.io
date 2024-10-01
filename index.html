@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="早川喬の個人ホームページ。研究内容や副業について紹介しています。">
-    <meta name="keywords" content="早川喬, 研究, 副業, GitHub Pages">
-    <meta property="og:title" content="早川喬 Homepage">
-    <meta property="og:description" content="研究内容や副業について紹介しています。">
+    <meta name="description" content="早川喬(Takashi Hayakawa)のホームページです。">
+    <meta name="keywords" content="早川喬, 研究, GitHub Pages">
+    <meta property="og:title" content="Takashi Hayakawa's Homepage">
+    <meta property="og:description" content="早川です。">
     <meta property="og:image" content="URL_to_image.jpg">
     <meta property="og:type" content="website">
     <title>Takashi Hayakawa's Homepage</title>
@@ -63,6 +63,20 @@
             margin-bottom: 30px;
         }
 
+        .intro p {
+            margin: 10px 0;
+        }
+
+        .intro .jp-en {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .jp-en p {
+            margin: 0 20px;
+        }
+
         nav {
             text-align: center;
             margin-top: 20px;
@@ -95,6 +109,15 @@
                 margin-bottom: 10px;
                 font-size: 1.1em;
             }
+
+            .jp-en {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .jp-en p {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -106,10 +129,26 @@
 
 <section>
     <div class="intro">
-        <!-- 自己紹介文は以下を編集するだけで変更可能です -->
-        <p>私は早川喬です。ここでは私の自己紹介、研究内容、副業について紹介しています。</p>
-        <p>現在は、主に〇〇に関する研究を行っています。また、複数の副業プロジェクトにも取り組んでいます。これにより、多様なスキルを習得し、新しい価値を生み出すことを目指しています。</p>
-        <p>趣味はスポーツと読書で、休日は新しい知識を得るために勉強しています。特に、最新の技術動向を追うことが好きです。</p>
+        <!-- 日本語と英語の両方を対応させる -->
+        <div class="jp-en">
+            <p>名前：早川喬</p>
+            <p>Name: Takashi Hayakawa</p>
+        </div>
+
+        <div class="jp-en">
+            <p>所属：九州大学大学院 理学府 地球惑星科学専攻 惑星系形成進化学研究室 D2</p>
+            <p>Affiliation: Graduate School of Science, Kyushu University, Department of Earth and Planetary Sciences, Planetary Formation and Evolution Lab, 2nd year PhD</p>
+        </div>
+
+        <div class="jp-en">
+            <p>こんにちは早川です。</p>
+            <p>Hello, I am Takashi Hayakawa.</p>
+        </div>
+
+        <div class="jp-en">
+            <p>トマトジュース</p>
+            <p>Tomato Juice</p>
+        </div>
     </div>
 
     <nav>
@@ -120,11 +159,7 @@
 
 <footer>
     <p>&copy; 2024 早川喬 Takashi Hayakawa</p>
-    <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    <div>
-        <a href="#">Twitter</a> | 
-        <a href="#">LinkedIn</a>
-    </div>
+    <p>Contact: <a href="mailto:hayakawa.takashi[at]s.kyushu-u.ac.jp">hayakawa.takashi[at]s.kyushu-u.ac.jp</a></p>
 </footer>
 
 </body>
