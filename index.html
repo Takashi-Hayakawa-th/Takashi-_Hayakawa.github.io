@@ -52,7 +52,7 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -67,14 +67,23 @@
             margin: 10px 0;
         }
 
-        .intro .jp-en {
+        .jp-en {
             display: flex;
-            justify-content: center;
-            flex-direction: row;
+            flex-direction: column;
+            align-items: center;
         }
 
         .jp-en p {
-            margin: 0 20px;
+            margin: 5px 0;
+        }
+
+        .email-link {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
         }
 
         nav {
@@ -108,15 +117,6 @@
                 display: block;
                 margin-bottom: 10px;
                 font-size: 1.1em;
-            }
-
-            .jp-en {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .jp-en p {
-                margin: 10px 0;
             }
         }
     </style>
@@ -152,14 +152,14 @@
     </div>
 
     <nav>
-        <a href="#">研究</a>
-        <a href="#">副業(本業)</a>
+        <a href="research.html">研究</a>
+        <a href="business.html">副業(本業)</a>
     </nav>
 </section>
 
 <footer>
     <p>&copy; 2024 早川喬 Takashi Hayakawa</p>
-    <p>Contact: <a href="mailto:hayakawa.takashi[at]s.kyushu-u.ac.jp">hayakawa.takashi[at]s.kyushu-u.ac.jp</a></p>
+    <p>Contact: <a class="email-link" href="mailto:hayakawa.takashi[at]s.kyushu-u.ac.jp">hayakawa.takashi[at]s.kyushu-u.ac.jp</a></p>
 </footer>
 
 </body>
